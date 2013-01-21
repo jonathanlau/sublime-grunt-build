@@ -1,7 +1,7 @@
 Grunt.js build system for Sublime Text 2
 ========================================
 
-This package enables you to run Grunt.js builds from the excellent Sublime Text 2 editor, with bonus support for buld on "Save".
+This package enables you to run Grunt.js builds from the excellent Sublime Text 2 editor, with bonus support for build on "Save".
 
 Modification of Jon Schlinkert's original distribution to address OSX compatibilty issues - keep grunting!<br />
 https://github.com/jonschlinkert/sublime-grunt-build
