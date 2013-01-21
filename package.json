@@ -1,6 +1,6 @@
 {
   "url": "https://github.com/jonschlinkert/sublime-grunt-build",
-  "fork": "https://github.com/jonathanlau/sublime-grunt-build.git",
-  "version": "1.0.1",
+  "fork": "https://github.com/jonathanlau/sublime-grunt-build",
+  "version": "1.0.osx",
   "description": "Grunt build system for Sublime Text 2"
 }
