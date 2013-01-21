@@ -1,21 +1,28 @@
 {
-  "cmd": ["grunt", "--no-color"],
-  "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-  "working_dir": "${project_path:${folder:${file_path}}}",
-  "selector": "grunt.js",
-  "windows":
-  {
-    "cmd": ["grunt.cmd", "--no-color"]
-  },
-  "variants":
-  [
-    {
-      "name": "Grunt",
-      "cmd": ["grunt", "--no-color"],
-      "windows":
-      {
-        "cmd": ["grunt.cmd", "--no-color"]
-      }
-    }
-  ]
+	"selector": "grunt.js",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${project_path:${folder:${file_path}}}",
+	"path": "/usr/local/bin",
+	//OSX INFORMATION
+	//DEVNOTE: @path needs to point to the node + grunt binaries on your local file system.
+	//These locations can vary depending on your chosen installation method. In most cases these binaries would be stored globally in "/usr/local/bin", however if you have choosen a different location or used an alternative method of installation i.e. NVM then these binaries will exist elsewhere. The commented "path" line should cover most bases HOWEVER you will need to populate the markers denoted by the [SQUARE BRACKETS] with your own information e.g. [USER] = your local username, [VERSION] = directory of the version of node you wish to adopt (if install via NVM).
+	//"path": "/bin:/usr/bin:/usr/local/bin:/Users/[USER]/.nvm/bin:/Users/[USER]/.nvm/[VERSION]/bin",
+	"windows":
+	{
+		"cmd": ["grunt.cmd", "--no-color"]
+	},
+	"osx": {
+		"cmd": ["grunt", "--no-color"]
+	},
+	"variants":
+	[
+		{
+			"name": "Grunt",
+			"cmd": ["grunt", "--no-color"],
+			"windows":
+			{
+				"cmd": ["grunt.cmd", "--no-color"]
+			}
+		}
+	]
 }
